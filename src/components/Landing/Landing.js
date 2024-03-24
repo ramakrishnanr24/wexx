@@ -10,10 +10,12 @@ import { socialsData } from '../../data/socialsData';
 
 import {
     FaTwitter,
+FaInstagram ,
     FaLinkedin,
     FaGithub,
     FaYoutube,
-    FaBlogger,
+    FaTelegram,
+    FaWhatsapp,
 } from 'react-icons/fa';
 
 function Landing() {
@@ -88,13 +90,39 @@ function Landing() {
                                 />
                             </a>
                         )}
-                        {socialsData.github && (
+                        {socialsData.instagram && (
                             <a
-                                href={socialsData.github}
+                                href={socialsData.instagram}
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <FaGithub
+                                <FaInstagram 
+                                    className='landing--social'
+                                    style={{ color: theme.secondary }}
+                                    aria-label='GitHub'
+                                />
+                            </a>
+                        )}
+                          {socialsData.whatsapp && (
+                            <a
+                                href={socialsData.whatsapp}
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <FaWhatsapp 
+                                    className='landing--social'
+                                    style={{ color: theme.secondary }}
+                                    aria-label='GitHub'
+                                />
+                            </a>
+                        )}
+                          {socialsData.Telegram && (
+                            <a
+                                href={socialsData.Telegram}
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <FaTelegram 
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
                                     aria-label='GitHub'
